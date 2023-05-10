@@ -1,0 +1,8 @@
+---
+- name: Configure keycloak LXC
+  hosts: 192.168.29.84
+  become: yes
+  tasks:
+    - name: keycloak
+      include_role:
+        name: keycloak

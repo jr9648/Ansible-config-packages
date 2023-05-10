@@ -1,0 +1,8 @@
+---
+- name: Configure gitlab LXC
+  hosts: 192.168.29.82
+  become: yes
+  tasks:
+    - name: gitlab
+      include_role:
+        name: gitlab

@@ -1,0 +1,8 @@
+---
+- name: Install apache and wordpress
+  become: yes
+  hosts: 192.168.29.86
+  tasks:
+    - name: wordpress
+      include_role:
+        name: wordpress

@@ -1,0 +1,8 @@
+---
+- name: setup Mysql with instantpost db and remote login
+  become: yes
+  hosts: 192.168.29.85
+  tasks:
+    - name: mysql
+      include_role:
+        name: mysql

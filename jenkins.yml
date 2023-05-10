@@ -1,0 +1,8 @@
+---
+- name: Configure jenkins LXC
+  hosts: 192.168.29.83
+  become: yes
+  tasks:
+    - name: jenkins
+      include_role:
+        name: jenkins

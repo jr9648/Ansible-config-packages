@@ -1,0 +1,16 @@
+---
+- name: Configure mysql LXC
+  hosts: 192.168.29.85
+  become: yes
+  tasks:
+    - name: mysql
+      include_role:
+        name: mysql
+
+- name: Configure wordpress LXC
+  hosts: 192.168.29.86
+  become: yes
+  tasks:
+    - name: wordpress
+      include_role:
+        name: wordpress
